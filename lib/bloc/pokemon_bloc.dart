@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:pokemon_library/pokemon_page_response.dart';
+import 'package:pokemon_library/data/pokemon_page_response.dart';
 
-import '../pokemon_repository.dart';
+import '../data/pokemon_repository.dart';
 
 part 'pokemon_event.dart';
 
