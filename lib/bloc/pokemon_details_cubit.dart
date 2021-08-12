@@ -4,7 +4,7 @@ import 'package:pokemon_library/data/pokemon_info_response.dart';
 import 'package:pokemon_library/data/pokemon_repository.dart';
 import 'package:pokemon_library/data/pokemon_species_info.dart';
 
-class PokemonDetailsCubit extends Cubit<PokemonDetails> {
+class PokemonDetailsCubit extends Cubit<PokemonDetails?> {
   final _pokemonRepository = PokemonRepository();
 
   PokemonDetailsCubit() : super(null);

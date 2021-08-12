@@ -12,14 +12,12 @@ class PokemonDetailsView extends StatelessWidget {
   DateTime timeBackPressed = DateTime.now();
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => false,
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text('Details'),
         ),
         backgroundColor: Color(0xFFF2F2F2),
-        body: BlocBuilder<PokemonDetailsCubit, PokemonDetails>(
+        body: BlocBuilder<PokemonDetailsCubit, PokemonDetails?>(
           builder: (context, details) {
             return details != null
                 ? Center(
@@ -65,7 +63,6 @@ class PokemonDetailsView extends StatelessWidget {
                   );
           },
         ),
-      ),
     );
   }
 
